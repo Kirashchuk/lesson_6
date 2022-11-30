@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/1659983200_1-kartinkin-net-p-fon-dlya-stranitsi-saita-krasivo-1.jpg);
+  margin: 0;
+  height: 100vw;
+  font-size: 20px;
+}
