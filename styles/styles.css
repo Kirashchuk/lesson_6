@@ -4,7 +4,17 @@
 
 body {
   background-image: url(../images/1659983200_1-kartinkin-net-p-fon-dlya-stranitsi-saita-krasivo-1.jpg);
+  background-size: cover;
   margin: 0;
-  height: 100vw;
   font-size: 20px;
+}
+
+.wrapper {}
+
+.carousel {}
+
+.slide {}
+
+.slide__image {
+  width: 100px;
 }
