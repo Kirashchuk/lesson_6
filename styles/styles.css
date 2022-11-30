@@ -3,8 +3,74 @@
 }
 
 body {
+  background-color: #f1b2f1;
   background-image: url(../images/1659983200_1-kartinkin-net-p-fon-dlya-stranitsi-saita-krasivo-1.jpg);
+  background-size: cover;
   margin: 0;
-  height: 100vw;
   font-size: 20px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.carousel {
+  position: relative;
+  background-color: #f5deb3;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel::before,
+.carousel::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  height: 100%;
+  width: 200px;
+  top: 0;
+
+}
+
+.carousel::before {
+  left: 0;
+  background: linear-gradient(to right, white 0%, transparent 100%);
+}
+
+.carousel::after {
+  right: 0;
+  background: linear-gradient(to left, white 0%, transparent 100%);
+}
+
+.carousel:hover .slide {
+  animation-play-state: paused;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  animation: slideshow 10s linear infinite;
+}
+
+.slide__image {
+  height: calc(100% - 40px);
+  margin: 0 20px;
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
